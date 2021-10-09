@@ -79,7 +79,7 @@ header nav ul li a:hover {
 }
 
 footer {
-    background: var(--primary-color);
+    background: var(--secondary-color);
     color: black;
     padding: 20px;
     width: 100%;
@@ -125,18 +125,74 @@ section {
     width: 70%;
     font-size: 20px;
     text-align: left;
-    margin: 0 auto;
-    border-left: var(--secondary-color) solid 10px;
+    margin: 5px auto;
 }
 
 .section-title {
     font-size:60px;
     text-align: right;
+    display:inline-flex;
+    border-right: solid 10px;
+}
+
+.primary-border {
+    border-color: var(--secondary-color);
+}
+
+.section-title span {
+    color: white;
 }
 
 .projects {
-    display: inline-flex;
+    display: flex;
     background:var(--secondary-color);
     justify-content: space-between;
-    background-position: ce
+    flex-wrap: wrap;
+}
+
+.hobbies {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 70%;
+    flex: 1;
+}
+
+.hobbies div {
+    margin: 5px auto;
+    width: 70%;
+}
+
+.hobbies p {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.learning-list {
+    flex-direction: column;
+    text-align: left;
+}
+
+.learning-list ul li {
+    list-style: none;
+    font-size: 15px;
+    color:rgb(14, 119, 122);
+    font-style: italic;
+    font-weight: bold;
+    padding: 10px;
+    margin: 5px auto
+}
+
+.learning-list ul li:hover {
+    color:var(--fourth-color);
+}
+
+.contact-section {
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-section div {
+    display: inline-flex;
 }
