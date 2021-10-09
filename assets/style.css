@@ -19,15 +19,16 @@ body {
 
 header {
     background-color: var(--secondary-color);
+    background-image: url(./images/space.jpg);
     background-size: cover;
     background-position: 80%;
+    background-attachment: fixed;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     z-index: 1;
     top: 0;
-    color: rgb(14, 119, 122);
-    border-bottom: rgb(27, 27, 87) 1px solid;
+    color: rgb(22, 34, 201, .50);
     align-items: center;
 }
 
@@ -35,6 +36,7 @@ header img{
     max-width: 100%;
     max-height: 100%;
     border:rgb(6, 34, 194) 1px solid;
+    border-radius: 30px;
 }
 
 .name-pic img {
@@ -43,10 +45,10 @@ header img{
 }
 
 header h1 {
-   font-size: 36px;
+   font-size: 50px;
    font-weight: bold;
    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-   text-shadow: 0 0 10px rgba(0, 0, 0 ,.5);
+   text-shadow: 0 0 10px rgba(255, 255, 255, .50);
    margin: 0;
 }
 
@@ -79,8 +81,11 @@ header nav ul li a:hover {
 }
 
 footer {
-    background: var(--secondary-color);
-    color: black;
+    background-color: var(--secondary-color);
+    background-image: url(./images/space.jpg);
+    background-position: 80%;
+    background-size: cover;
+    color: white;
     padding: 20px;
     width: 100%;
 }
@@ -93,6 +98,7 @@ section {
     background-image: url("../assets/images/space.jpg");
     background-size: cover;
     background-position: 80%;
+    background-attachment: fixed;
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
@@ -143,12 +149,43 @@ section {
     color: white;
 }
 
+
+.projects h3 {
+    font-size: 28px;
+    font-style: oblique;
+    text-align: left;
+}
+
+.first-project {
+
+}
+
+.first-project img {
+    height: 500px;
+    width: 100%;
+    border: solid 3px var(--fourth-color);
+    margin: 20px 0;
+}
+
+.projects-cards {
+
+}
+
+.projects-cards img {
+    height: 250px;
+    width: 100%;
+    border: solid 3px var(--tertiary-color);
+}
+
 .projects {
     display: flex;
-    background:var(--secondary-color);
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
+    background:var(--secondary-color);
+    width: 100%;
+    margin: 5px auto;
 }
+
 
 .hobbies {
     display: inline-flex;
@@ -187,12 +224,23 @@ section {
     color:var(--fourth-color);
 }
 
+.contact-section div {
+    display: inline-block;
+    padding: 20px 5px;
+    margin: 0 10px;
+    height: auto;
+}
+
+.contact-section p {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    border-bottom: solid 2px #ffff;
+}
+
+
 .contact-section {
     background-color: var(--secondary-color);
     display: flex;
     flex-wrap: wrap;
-}
-
-.contact-section div {
-    display: inline-flex;
 }
