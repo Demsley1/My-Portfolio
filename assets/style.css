@@ -5,23 +5,138 @@
 }
 
 :root {
-    --primary-color: rgba(25, 74, 207, 0.767);
-    --secondary-color: darkblue;
+    --primary-color: #0863D9;
+    --secondary-color: #0C098C;
+    --tertiary-color: #1B9F0E;
+    --fourth-color: #EDC00F;
 }
 
 body {
-    color: red;
+    color: var(--fourth-color);
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 header {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
+    background-size: cover;
+    background-position: 80%;
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 1;
+    top: 0;
+    color: rgb(14, 119, 122);
+    border-bottom: rgb(27, 27, 87) 1px solid;
+    align-items: center;
 }
 
-.header-img {
-    height: auto;
-    max-width: 10px;
-    flex: 1;
+header img{
+    max-width: 100%;
+    max-height: 100%;
+    border:rgb(6, 34, 194) 1px solid;
+}
 
+.name-pic img {
+    height: 70px;
+    width: auto;
+}
+
+header h1 {
+   font-size: 36px;
+   font-weight: bold;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   text-shadow: 0 0 10px rgba(0, 0, 0 ,.5);
+   margin: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--fourth-color);
+}
+
+header nav {
+   
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    text-shadow: 0 0 5px rgba(255, 255, 225, .75);
+}
+
+header nav ul li a:hover {
+    background: var(--primary-color);
+    color:white;
+    border-radius: 10px;
+}
+
+footer {
+    background: var(--primary-color);
+    color: black;
+    padding: 20px;
+    width: 100%;
+}
+
+section {
+    padding: 50px;
+}
+
+.hero {
+    background-image: url("../assets/images/space.jpg");
+    background-size: cover;
+    background-position: 80%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding: 80px;
+    align-items: flex-end;
+}
+
+.hero-intro {
+    width:50%;
+    margin-top: 3%;
+    text-align: right;
+    align-content: right;
+    color: white;
+    line-height: 1;
+}
+
+.hero-intro h2 {
+    font-size: 22px;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 0, 0, );
+    font-style: italic;
+}
+
+.bio{
+    display:inline-flex;
+}
+
+.bio p {
+    color: var(--primary-color);
+    width: 70%;
+    font-size: 20px;
+    text-align: left;
+    margin: 0 auto;
+    border-left: var(--secondary-color) solid 10px;
+}
+
+.section-title {
+    font-size:60px;
+    text-align: right;
+}
+
+.projects {
+    display: inline-flex;
+    background:var(--secondary-color);
+    justify-content: space-between;
+    background-position: ce
 }
