@@ -80,6 +80,8 @@ header nav ul li a:hover {
     border-radius: 10px;
 }
 
+
+
 footer {
     background-color: var(--secondary-color);
     background-image: url(./images/space.jpg);
@@ -154,10 +156,12 @@ section {
     font-size: 28px;
     font-style: oblique;
     text-align: left;
+    background: var(--primary-color);
 }
 
-.first-project {
 
+.first-project {
+    align-content: center;
 }
 
 .first-project img {
