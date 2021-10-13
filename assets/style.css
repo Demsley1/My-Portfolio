@@ -7,7 +7,6 @@
 :root {
     --primary-color: #0863D9;
     --secondary-color: #0C098C;
-    --tertiary-color: #1B9F0E;
     --fourth-color: #EDC00F;
 }
 
@@ -51,6 +50,7 @@ header h1 {
    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
    text-shadow: 0 0 10px rgba(255, 255, 255, .50);
    font-style: italic;
+   display: inline-flex;
 }
 
 
@@ -128,10 +128,9 @@ section {
 
 .bio p {
     color: var(--primary-color);
-    width: 70%;
     font-size: 18px;
     text-align: left;
-    margin: 5px auto;
+    margin: 5px 20px;
 }
 
 
@@ -146,22 +145,25 @@ section {
 }
 
 .first-project img {
-    border: solid 3px var(--fourth-color);
-    margin: 20px 5px;
+    border: solid 3px rgba(167, 0, 125, 0.50);
+    margin: 5px;
     width: 100%;
+    box-shadow: 0 0 15px rgba(255, 255, 225, .75);
 }
 
 .resize {
-    width: auto;
     display: flex;
     flex-wrap: wrap;
     margin: 20px;
 }
 
+
+
 .projects-cards img {
-    border: solid 3px var(--tertiary-color);
-    margin: 0 20px;
+    border: solid 3px rgba(167, 0, 125, 0.50);
+    margin: 5px;
     height: 300px;
+    box-shadow: 0 0 15px rgba(255, 255, 225, .75);
 }
 
 .projects {
@@ -176,13 +178,11 @@ section {
 .hobbies {
     display: inline-flex;
     flex-wrap: wrap;
-    width: 70%;
     flex: 1;
 }
 
 .hobbies div {
-    margin: 5px auto;
-    width: 70%;
+    margin: 5px;
 }
 
 .hobbies p {
@@ -212,8 +212,7 @@ section {
 
 .contact-section div {
     display: inline-block;
-    padding: 20px 5px;
-    height: auto;
+    padding: 0px 5px;
     margin: 0 10px;
 }
 
@@ -244,4 +243,8 @@ section {
 
 .section-title span {
     color: white;
+}
+
+.set-width {
+    width: 100%;
 }
