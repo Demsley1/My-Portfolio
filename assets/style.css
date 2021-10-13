@@ -42,6 +42,7 @@ header img{
 .name-pic img {
     height: 70px;
     width: auto;
+    margin-right: 10px;
 }
 
 header h1 {
@@ -49,16 +50,13 @@ header h1 {
    font-weight: bold;
    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
    text-shadow: 0 0 10px rgba(255, 255, 255, .50);
-   margin: 0;
+   font-style: italic;
 }
+
 
 header a {
     text-decoration: none;
     color: var(--fourth-color);
-}
-
-header nav {
-   
 }
 
 header nav ul {
@@ -101,8 +99,8 @@ section {
     background-size: cover;
     background-position: 80%;
     background-attachment: fixed;
-    display: flex;
     justify-content: flex-end;
+    display: flex;
     flex-wrap: wrap;
     padding: 80px;
     align-items: flex-end;
@@ -131,24 +129,9 @@ section {
 .bio p {
     color: var(--primary-color);
     width: 70%;
-    font-size: 20px;
+    font-size: 18px;
     text-align: left;
     margin: 5px auto;
-}
-
-.section-title {
-    font-size:60px;
-    text-align: right;
-    display:inline-flex;
-    border-right: solid 10px;
-}
-
-.primary-border {
-    border-color: var(--secondary-color);
-}
-
-.section-title span {
-    color: white;
 }
 
 
@@ -156,38 +139,37 @@ section {
     font-size: 28px;
     font-style: oblique;
     text-align: left;
-    background: var(--primary-color);
 }
-
 
 .first-project {
     align-content: center;
 }
 
 .first-project img {
-    height: 500px;
-    width: 100%;
     border: solid 3px var(--fourth-color);
-    margin: 20px 0;
+    margin: 20px 5px;
+    width: 100%;
 }
 
-.projects-cards {
-
+.resize {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
 }
 
 .projects-cards img {
-    height: 250px;
-    width: 100%;
     border: solid 3px var(--tertiary-color);
+    margin: 0 20px;
+    height: 300px;
 }
 
 .projects {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     background:var(--secondary-color);
-    width: 100%;
+    width:100%;
     margin: 5px auto;
+    justify-content: flex-end;
 }
 
 
@@ -231,8 +213,8 @@ section {
 .contact-section div {
     display: inline-block;
     padding: 20px 5px;
-    margin: 0 10px;
     height: auto;
+    margin: 0 10px;
 }
 
 .contact-section p {
@@ -247,4 +229,19 @@ section {
     background-color: var(--secondary-color);
     display: flex;
     flex-wrap: wrap;
+}
+
+.section-title {
+    font-size:60px;
+    text-align: right;
+    border-right: solid 10px;
+    display: inline-block;
+}
+
+.primary-border {
+    border-color: var(--secondary-color);
+}
+
+.section-title span {
+    color: white;
 }
