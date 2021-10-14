@@ -5,13 +5,13 @@
 }
 
 :root {
-    --primary-color: #0863D9;
-    --secondary-color: #0C098C;
-    --fourth-color: #EDC00F;
+    --primary-color: #0e387a;
+    --secondary-color: #9fafca;
+    --tertiary-color: rgba(182, 182, 67, 0.849);
 }
 
 body {
-    color: var(--fourth-color);
+    color: var(--secondary-color);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -34,7 +34,7 @@ header {
 header img{
     max-width: 100%;
     max-height: 100%;
-    border:rgb(6, 34, 194) 1px solid;
+    border:rgb(0, 0, 0) 1px solid;
     border-radius: 30px;
 }
 
@@ -56,7 +56,7 @@ header h1 {
 
 header a {
     text-decoration: none;
-    color: var(--fourth-color);
+    color: var(--secondary-color);
 }
 
 header nav ul {
@@ -88,6 +88,7 @@ footer {
     color: white;
     padding: 20px;
     width: 100%;
+    text-align: center;
 }
 
 section {
@@ -120,6 +121,7 @@ section {
     font-weight: bold;
     text-shadow: 0 0 10px rgba(0, 0, 0, );
     font-style: italic;
+    color: var(--tertiary-color);
 }
 
 .bio{
@@ -127,10 +129,10 @@ section {
 }
 
 .bio p {
-    color: var(--primary-color);
     font-size: 18px;
     text-align: left;
     margin: 5px 20px;
+    color: var(--tertiary-color)
 }
 
 
@@ -138,17 +140,20 @@ section {
     font-size: 28px;
     font-style: oblique;
     text-align: left;
+    color: var(--tertiary-color);
 }
 
+.projects h3:hover {
+    color: white;
+}
 .first-project {
     align-content: center;
 }
 
 .first-project img {
-    border: solid 3px rgba(167, 0, 125, 0.50);
+    border: solid 3px var(--tertiary-color);
     margin: 5px;
     width: 100%;
-    box-shadow: 0 0 15px rgba(255, 255, 225, .75);
 }
 
 .resize {
@@ -157,18 +162,20 @@ section {
     margin: 20px;
 }
 
-
-
 .projects-cards img {
-    border: solid 3px rgba(167, 0, 125, 0.50);
+    border: solid 3px rgba(182, 182, 67, 0.849);
     margin: 5px;
     height: 300px;
+}
+
+.projects-cards img:hover, .first-project img:hover {
+    border: solid 3px white;
     box-shadow: 0 0 15px rgba(255, 255, 225, .75);
 }
 
 .projects {
     display: flex;
-    background:var(--secondary-color);
+    background:var(--primary-color);
     width:100%;
     margin: 5px auto;
     justify-content: flex-end;
@@ -189,6 +196,7 @@ section {
     font-size: 22px;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(182, 182, 67, 0.849);
 }
 
 .learning-list {
@@ -207,7 +215,7 @@ section {
 }
 
 .learning-list ul li:hover {
-    color:var(--fourth-color);
+    color:var(--secondary-color);
 }
 
 .contact-section div {
@@ -221,11 +229,12 @@ section {
     font-weight: bold;
     margin-bottom: 15px;
     border-bottom: solid 2px #ffff;
+    color: var(--tertiary-color);
 }
 
 
 .contact-section {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     display: flex;
     flex-wrap: wrap;
 }
@@ -238,7 +247,7 @@ section {
 }
 
 .primary-border {
-    border-color: var(--secondary-color);
+    border-color: var(--primary-color);
 }
 
 .section-title span {
@@ -247,4 +256,88 @@ section {
 
 .set-width {
     width: 100%;
+}
+
+@media screen and (max-width: 980px) {
+    header {
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+
+    .hero-intro {
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+        width: auto;
+    }
+    
+    .bio, .hobbies {
+        display: block;
+    }
+
+    .bio p {
+        text-align: center;
+    }
+
+    .projects {
+        display: inline-block;
+        justify-content: center;
+    }
+
+    .first-project img, .projects-cards img {
+        width: 100%;
+        height: auto;
+    }
+
+    .resize {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .learning-list {
+        text-align: center;
+    }
+
+    .learning-list ul li {
+        font-size: 20px;
+    }
+
+    .contact-section p {
+        border-bottom: 0;
+        margin: 20px;
+        text-align: center;
+    }
+
+    .section-title {
+        text-align: center;
+        border-bottom: 10px solid;
+        display: block;
+        height: auto;
+        width: 100%;
+        border-right: 0;
+    }
+
+    .primary-border {
+        border-color: var(--primary-color)
+    }
+}
+
+@media screen and (max-width: 450px) {
+    header nav ul {
+        justify-content: center; 
+        flex-direction: column;
+        font-size: 15px;;
+    }
+
+    .bio p {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .contact-section p {
+        text-align: unset;
+    }
+
+
 }
