@@ -337,6 +337,10 @@ section {
         font-size: 15px;;
     }
 
+    header h1 {
+        color: var(--tertiary-color);
+    }
+
     .bio p {
         font-size: 15px;
         text-align: justify;
