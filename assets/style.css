@@ -151,7 +151,7 @@ section {
 }
 
 .first-project img {
-    border: solid 3px var(--tertiary-color);
+    border: solid 3px rgba(12, 233, 233, .85);
     margin: 5px;
     width: 100%;
 }
@@ -163,7 +163,7 @@ section {
 }
 
 .projects-cards img {
-    border: solid 3px rgba(182, 182, 67, 0.849);
+    border: solid 3px rgba(12, 233, 233, .85);
     margin: 5px;
     height: 300px;
 }
@@ -316,6 +316,15 @@ section {
         color: black;
     }
 
+    .contact-section a {
+        text-decoration: none;
+        color: rgb(12, 233, 233);
+    }
+
+    .contact-section a:hover {
+        text-shadow: 0 0 20px rgba(255, 255, 225, .75);
+    }
+
     .section-title {
         text-align: center;
         border-bottom: 10px solid;
@@ -334,7 +343,8 @@ section {
     header nav ul {
         justify-content: center; 
         flex-direction: column;
-        font-size: 15px;;
+        font-size: 15px;
+        padding: 10px;
     }
 
     header h1 {
