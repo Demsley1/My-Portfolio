@@ -277,6 +277,7 @@ section {
 
     .bio p {
         text-align: center;
+        padding: 20px 0;
     }
 
     .projects {
@@ -290,9 +291,9 @@ section {
     }
 
     .resize {
-        align-items: center;
         display: flex;
         flex-direction: column;
+        margin: 20px auto;
     }
 
     .learning-list {
@@ -307,6 +308,12 @@ section {
         border-bottom: 0;
         margin: 20px;
         text-align: center;
+    }
+
+    .contact-section address {
+        text-align: center;
+        font-size: 18px;
+        color: black;
     }
 
     .section-title {
