@@ -78,8 +78,6 @@ header nav ul li a:hover {
     border-radius: 10px;
 }
 
-
-
 footer {
     background-color: var(--secondary-color);
     background-image: url(./images/space.jpg);
@@ -89,6 +87,7 @@ footer {
     padding: 20px;
     width: 100%;
     text-align: center;
+    font-style: italic;
 }
 
 section {
@@ -232,6 +231,14 @@ section {
     color: var(--tertiary-color);
 }
 
+.contact-section a {
+    text-decoration: none;
+    color: rgb(12, 233, 233);
+}
+
+.contact-section a:hover {
+    text-shadow: 0 0 20px rgba(255, 255, 225, .75);
+}
 
 .contact-section {
     background-color: var(--primary-color);
@@ -261,7 +268,11 @@ section {
 @media screen and (max-width: 980px) {
     header {
         justify-content: center;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
+    }
+
+    header nav ul {
+        padding: 10px 0;
     }
 
     .hero-intro {
@@ -316,15 +327,6 @@ section {
         color: black;
     }
 
-    .contact-section a {
-        text-decoration: none;
-        color: rgb(12, 233, 233);
-    }
-
-    .contact-section a:hover {
-        text-shadow: 0 0 20px rgba(255, 255, 225, .75);
-    }
-
     .section-title {
         text-align: center;
         border-bottom: 10px solid;
@@ -344,7 +346,7 @@ section {
         justify-content: center; 
         flex-direction: column;
         font-size: 15px;
-        padding: 10px;
+        padding: 30px;
     }
 
     header h1 {
