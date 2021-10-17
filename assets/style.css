@@ -152,7 +152,8 @@ footer {
 .resize {
     display: flex;
     flex-wrap: wrap;
-    margin: 20px;
+    margin: 10px;
+    width: 100%;
 }
 
 .resize a {
