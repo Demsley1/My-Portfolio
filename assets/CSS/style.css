@@ -18,7 +18,7 @@ body {
 
 header {
     background-color: var(--secondary-color);
-    background-image: url(./images/space.jpg);
+    background-image: url(space.jpg);
     background-size: cover;
     background-position: 80%;
     background-attachment: fixed;
@@ -92,7 +92,7 @@ footer {
 
 
 .hero {
-    background-image: url("../assets/images/space.jpg");
+    background-image: url("space.jpg");
     background-size: cover;
     background-position: 80%;
     background-attachment: fixed;
@@ -120,6 +120,7 @@ footer {
     color: var(--tertiary-color);
 }
 
+
 .bio{
     padding: 50px 0 50px 140px;
     display:inline-flex;
@@ -143,6 +144,11 @@ footer {
     color: white;
 }
 
+.images {
+    height: 70%;
+    width: auto;
+}
+
 .first-project img {
     border: solid 3px rgba(12, 233, 233, .85);
     margin: 5px;
@@ -150,6 +156,7 @@ footer {
 }
 
 .resize {
+    padding: 10px;
     display: flex;
     flex-wrap: wrap;
     margin: 10px;
@@ -177,7 +184,7 @@ footer {
     width:100%;
     margin: 5px auto;
     justify-content: flex-end;
-    padding: 50px 0 50px 140px;
+    padding: 50px 0 50px 90px;
 }
 
 .hobbies {
